@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="App">
+    <div className="hegazi-app">
       App
     </div>
   );
