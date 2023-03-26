@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @import "./assets/fonts/index.css";
-@import "./fontello.css";
+@import "./assets/icons/fontello.css";
 
 body {
   font-family: "Roboto", sans-serif;
