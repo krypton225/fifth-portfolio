@@ -1,0 +1,12 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Courgette';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./courgette-v13-latin-regular.eot');
+    src: url('./courgette-v13-latin-regular.eot?#iefix') format('embedded-opentype'),
+        url('./courgette-v13-latin-regular.woff2') format('woff2'),
+        url('./courgette-v13-latin-regular.woff') format('woff'),
+        url('./courgette-v13-latin-regular.ttf') format('truetype'),
+        url('./courgette-v13-latin-regular.svg#Courgette') format('svg');
+}
