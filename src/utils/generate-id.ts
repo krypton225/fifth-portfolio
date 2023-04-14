@@ -20,6 +20,7 @@ const GenerateID = (function () {
     /**
      * @param  {Array} dataArr=[] - array has objects and insert IDs into each one.
      */
+    // prettier-ignore
     function insertIDIntoData(dataArr: Array<object> = []) {
         if (isArrayNotEmpty(dataArr)) {
             const counter = getNumberID();
