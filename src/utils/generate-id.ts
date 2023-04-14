@@ -26,7 +26,7 @@ const GenerateID = (function () {
 
             dataArr.forEach((row) => {
                 if (typeof row === "object") {
-                    if (Object.prototype.hasOwnProperty.call(row, "id")) {
+                    if (!row.hasOwnProperty("id")) { // eslint-disable-line
                         Object.defineProperty(row, "id", {
                             value: counter.next().value,
                             writable: false,
