@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .toggle-line {
+        @apply w-full h-[0.14rem] rounded-lg bg-primary transition-all;
+    }
+}
+
 @import "./assets/fonts/index.css";
 @import "./assets/icons/fontello.css";
 
 body {
+    /* height: 20000px; */
     font-family: "Roboto", sans-serif;
 }
