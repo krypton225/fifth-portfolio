@@ -7,6 +7,7 @@ const NavbarData: Array<INavbar> = [
     { url: "#", textLink: "projects", isButton: false },
     { url: "#", textLink: "blog", isButton: false },
     { url: "#", textLink: "certificates", isButton: false },
+    { url: "#", textLink: "contact me", isButton: false },
     { url: "#", textLink: "hire me", isButton: true },
 ];
 
