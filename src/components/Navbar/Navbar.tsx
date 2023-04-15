@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import NavbarData from "data/navbar.data";
+import Toggler from "./Toggler";
 
 const Navbar = () => {
     const [toggler, setToggler] = useState<boolean>(false);
@@ -50,7 +51,7 @@ const Navbar = () => {
                             {/* prettier-ignore */}
                             <a href={url}
 
-                                className={`inline-block lg:mx-6 py-3 relative whitespace-nowrap capitalize text-sm font-semibold
+                                className={`inline-block lg:mx-6 py-3 relative whitespace-nowrap capitalize text-md font-semibold
                                     sm:text-base lg:text-lg lg:font-normal transition-all duration-500 hover:text-primary 
                                     
                                     before:content-[''] before:w-0 before:h-[0.2rem] before:rounded-lg 
@@ -66,21 +67,7 @@ const Navbar = () => {
                     ))}
                 </ul>
 
-                {/* prettier-ignore */}
-                <div
-                    className={`min-w-[2.5rem] min-h-[1.3rem] lg:hidden
-                        flex flex-col justify-between items-center cursor-pointer transition-all duration-[1s]`}
-                    onClick={onToggler}>
-
-                    <span className={`toggle-line duration-[0.7s] ${toggler ? "-rotate-45 translate-y-[0.57rem]" : ""}`}>
-                    </span>
-
-                    <span className={`toggle-line duration-[0.3s] ${toggler ? "translate-x-5 opacity-0" : ""}`}>
-                    </span>
-
-                    <span className={`toggle-line duration-[1.1s] ${toggler ? "rotate-45 -translate-y-2" : ""}`}>
-                    </span>
-                </div>
+                <Toggler togglerState={toggler} onClickTogglerState={onToggler} />
             </div>
         </nav>
     );
