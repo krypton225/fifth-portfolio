@@ -5,6 +5,7 @@ import "./index.css";
 
 import App from "./App";
 
+// eslint-disable-next-line prettier/prettier
 const root = ReactDOM.createRoot(document.getElementById("main") as HTMLElement);
 
 root.render(
