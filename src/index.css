@@ -6,12 +6,48 @@
     .toggle-line {
         @apply w-full h-[0.14rem] rounded-lg bg-primary transition-all;
     }
+
+    .btn {
+        @apply inline-block px-9 py-2 relative z-10 border-[0.1rem] border-solid border-primary font-semibold capitalize tracking-wide overflow-hidden transition-all duration-[0.53s]
+    }
+
+    .btn-has-bg {
+        @apply before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:bg-primary text-white before:-z-[5] before:transition-all before:duration-[0.53s] hover:before:left-[-100%] hover:text-primary;
+    }
+
+    .btn-no-bg {
+        @apply border-[0.1rem] border-solid border-primary text-primary before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:right-[-100%] before:-z-[5] before:bg-primary before:transition-all before:duration-[0.53s] hover:before:right-0 hover:text-white;
+    }
 }
 
 @import "./assets/fonts/index.css";
 @import "./assets/icons/fontello.css";
 
 body {
-    /* height: 20000px; */
+    height: 20000px;
     font-family: "Roboto", sans-serif;
+    overflow-x: hidden !important;
+}
+
+section {
+    padding-top: min(22vh, 15rem);
+    padding-bottom: min(10vh, 8rem);
+}
+
+@media (min-height: 640px) {
+    section {
+        padding-top: min(24vh, 15rem);
+    }
+}
+
+@media (min-height: 1024px) {
+    section {
+        padding-top: min(13vh, 15rem);
+    }
+}
+
+@media (min-width: 572px) {
+    .chn-text-mq {
+        text-align: start;
+    }
 }
