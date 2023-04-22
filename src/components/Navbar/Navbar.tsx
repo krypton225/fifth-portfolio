@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import { Link } from "react-scroll";
+
 import NavbarData from "data/navbar.data";
 import Toggler from "./Toggler";
 
@@ -16,6 +18,10 @@ const Navbar = () => {
         } else {
             setIsScroll(false);
         }
+    };
+
+    const closeTogglerAfterLinkClicked = (): void => {
+        setToggler(!toggler);
     };
 
     useEffect(() => {
@@ -49,10 +55,10 @@ const Navbar = () => {
                     {NavbarData.map(({ id, url, textLink, isButton }) => (
                         <li key={id} className="w-full block mx-auto md:mb-1 lg:mb-0 lg:inline-block">
                             {/* prettier-ignore */}
-                            <a href={url}
-
+                            <Link to={`${url}`} smooth={true} offset={-100} duration={900} delay={200}
+                                onClick={closeTogglerAfterLinkClicked} activeClass="nav-link-active"
                                 className={`inline-block lg:mx-6 py-2 relative whitespace-nowrap capitalize text-md font-semibold
-                                    sm:text-base lg:text-lg lg:font-normal overflow-hidden
+                                    sm:text-base lg:text-lg lg:font-normal overflow-hidden cursor-pointer
                                     transition-all duration-500 hover:text-primary 
 
                                     after:content-[''] after:w-0 after:h-[0.2rem] after:rounded-lg 
@@ -61,7 +67,7 @@ const Navbar = () => {
 
                                     ${isButton ? `px-9 capitalize tracking-wide btn-has-bg after:content-none` : ``}`}>
                                 {textLink}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
