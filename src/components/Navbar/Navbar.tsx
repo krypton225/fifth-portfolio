@@ -28,7 +28,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`min-h-[2.1rem] w-full fixed top-0 left-0 transition-all duration-500 bg-white
+            className={`min-h-[2.1rem] w-full fixed top-0 left-0 z-[999999999] transition-all duration-500 bg-white
             ${isScroll ? "py-0 shadow-md" : "py-3"}`}>
             <div className="container flex justify-between items-center">
                 <h1 className="py-3 text-xl sm:text-2xl md:text-3xl tracking-wider relative">
@@ -39,7 +39,7 @@ const Navbar = () => {
                 {/* prettier-ignore */}
                 <ul
                     className={`w-[90%] md:w-[70%] py-4 border-[0.001rem] rounded-md border-[#dddddd] border-solid 
-                        absolute top-20 z-[9999] text-center bg-white shadow-lg transition-all duration-[1s]
+                        absolute top-20 z-[9999999] text-center bg-white shadow-lg transition-all duration-[1s]
 
                         ${toggler ? "left-[5%] md:left-[15%] visible opacity-100" : "-left-[30%] invisible opacity-0"}
 
@@ -51,16 +51,15 @@ const Navbar = () => {
                             {/* prettier-ignore */}
                             <a href={url}
 
-                                className={`inline-block lg:mx-6 py-3 relative whitespace-nowrap capitalize text-md font-semibold
-                                    sm:text-base lg:text-lg lg:font-normal transition-all duration-500 hover:text-primary 
-                                    
-                                    before:content-[''] before:w-0 before:h-[0.2rem] before:rounded-lg 
-                                    before:absolute before:bottom-2 before:left-0 before:bg-primary
-                                    before:transition-all before:duration-300 hover:before:w-full
-                                    
-                                    ${isButton ? `mt-3 lg:mx-0 lg:ml-5 lg:mt-0 px-8 py-[0.3rem] lg:py-2 rounded-md 
-                                    bg-primary text-white font-semibold before:content-none transition-all duration-500
-                                    hover:text-white hover:bg-blue-800` : ``}`}>
+                                className={`inline-block lg:mx-6 py-2 relative whitespace-nowrap capitalize text-md font-semibold
+                                    sm:text-base lg:text-lg lg:font-normal overflow-hidden
+                                    transition-all duration-500 hover:text-primary 
+
+                                    after:content-[''] after:w-0 after:h-[0.2rem] after:rounded-lg 
+                                    after:absolute after:bottom-1 after:left-0 after:bg-primary
+                                    after:transition-all after:duration-300 hover:after:w-full
+
+                                    ${isButton ? `px-9 capitalize tracking-wide btn-has-bg after:content-none` : ``}`}>
                                 {textLink}
                             </a>
                         </li>
