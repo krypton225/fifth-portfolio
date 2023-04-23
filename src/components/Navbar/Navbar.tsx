@@ -54,6 +54,7 @@ const Navbar = () => {
 
                     {NavbarData.map(({ id, url, textLink, isButton }) => (
                         <li key={id} className="w-full block mx-auto md:mb-1 lg:mb-0 lg:inline-block">
+                            {/* href={`#${url}`} */}
                             {/* prettier-ignore */}
                             <Link to={`${url}`} smooth={true} offset={-100} duration={900} delay={200}
                                 onClick={closeTogglerAfterLinkClicked} activeClass="nav-link-active"
