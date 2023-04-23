@@ -46,7 +46,15 @@ header {
 }
 
 section {
-    padding-block: min(10vh, 10rem);
+    padding-top: min(7.5vh, 5rem);
+    padding-bottom: min(4vh, 2.5rem);
+    scroll-padding-top: 0;
+}
+
+@media (min-height: 1280px) {
+    section {
+        padding-top: min(4.5vh, 5rem);
+    }
 }
 
 @media (min-width: 572px) {
