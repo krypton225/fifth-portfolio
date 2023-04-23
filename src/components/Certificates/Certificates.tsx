@@ -22,7 +22,7 @@ const Certificates = () => {
                             </p>
 
                             <div className="w-24 mt-4 mb-2 relative">
-                                <a href={company.link}>
+                                <a href={company.link} target="_blank" rel="noreferrer">
                                     <img
                                         src={company.logo}
                                         alt={company.altText}
@@ -40,7 +40,8 @@ const Certificates = () => {
                                         transition-colors duration-700 hover:bg-primary-2`}
                                     href={`${url}`}
                                     target="_blank"
-                                    rel="noreferrer">
+                                    rel="noreferrer"
+                                    title={`Show ${name} certificate`}>
                                     Show certificate
                                 </a>
                             </p>

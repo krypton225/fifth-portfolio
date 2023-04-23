@@ -2,7 +2,7 @@ import GenerateId from "utils/generate-id";
 
 import ICertificate from "./ICertificate.interface";
 
-import { CourseraLogo } from "data/images";
+import { CourseraLogo, IPICLogo, ITILogo } from "data/images";
 
 const CertificatesData: Array<ICertificate> = [
     {
@@ -84,6 +84,36 @@ const CertificatesData: Array<ICertificate> = [
         },
         date: "01/11/2022",
         url: "https://www.coursera.org/account/accomplishments/certificate/VGM62JXLUUDV",
+    },
+    {
+        name: "UX Design Fundamentals",
+        company: {
+            logo: ITILogo,
+            link: "https://maharatech.gov.eg/",
+            altText: "MaharaTech - ITI",
+        },
+        date: "19/01/2022",
+        url: "https://drive.google.com/file/d/17O_-Zgm3qGjrZYWEcT5d-qA_pIfXG8z5/view",
+    },
+    {
+        name: "UX/UX - ITI training",
+        company: {
+            logo: ITILogo,
+            link: "https://maharatech.gov.eg/",
+            altText: "MaharaTech - ITI",
+        },
+        date: "15/07/2019",
+        url: "https://drive.google.com/file/d/1ucxPD-mtUcL6XvevaokxH8ufNlhkEFX0/view",
+    },
+    {
+        name: "IPIC training",
+        company: {
+            logo: IPICLogo,
+            link: "https://www.ipic-eg.com/",
+            altText: "IPIC",
+        },
+        date: "20/08/2020",
+        url: "https://drive.google.com/file/d/1G9HSG0GIg3s1NvDH8h56__bhZXVa7Ej6/view",
     },
 ];
 
