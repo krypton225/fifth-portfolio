@@ -1,4 +1,4 @@
-import { Navbar, Landing } from "components";
+import { Navbar, Landing, Certificates } from "components";
 
 function App() {
     return (
@@ -6,6 +6,8 @@ function App() {
             <Navbar />
 
             <Landing />
+
+            <Certificates />
         </div>
     );
 }
