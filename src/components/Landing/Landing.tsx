@@ -4,7 +4,7 @@ import { PersonalPicture } from "data/images";
 
 const Landing = () => {
     return (
-        <section className="w-screen landing" id="home">
+        <header className="w-screen landing" id="home">
             <div className="container w-full grid place-items-start md:place-items-center">
                 <div className="w-full flex justify-center lg:justify-between items-center flex-wrap gap-5 sm:gap-10">
                     <div className="text-center sm:text-start chn-text-mq">
@@ -31,7 +31,7 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </header>
     );
 };
 

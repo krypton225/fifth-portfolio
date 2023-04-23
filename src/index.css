@@ -29,21 +29,24 @@ body {
     overflow-x: hidden !important;
 }
 
+header {
+    padding-bottom: min(5vh, 4rem);
+}
+
+@media (min-height: 100px) {
+    header {
+        padding-top: min(30vh, 7rem);
+    }
+}
+
+@media (min-height: 319px) {
+    header {
+        padding-top: min(24.5vh, 7rem);
+    }
+}
+
 section {
-    padding-top: min(22vh, 15rem);
-    padding-bottom: min(10vh, 8rem);
-}
-
-@media (min-height: 640px) {
-    section {
-        padding-top: min(24vh, 15rem);
-    }
-}
-
-@media (min-height: 1024px) {
-    section {
-        padding-top: min(13vh, 15rem);
-    }
+    padding-block: min(10vh, 10rem);
 }
 
 @media (min-width: 572px) {
