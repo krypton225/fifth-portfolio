@@ -7,7 +7,7 @@ const Certificates = () => {
         <section className="w-full" id="certificates">
             <SectionTitle text="certificates" />
 
-            <div className="container mt-8 md:mt-12">
+            <div className="container">
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-10">
                     {/* shadow-blue-500 shadow-lg */}
                     {CertificatesData.map(({ id, name, company, date, url }) => (
