@@ -66,3 +66,7 @@ section {
         text-align: start;
     }
 }
+
+.shadow-top {
+    box-shadow: 0 -15px 150px 25px #2554c7;
+}
