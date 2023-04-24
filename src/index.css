@@ -23,6 +23,10 @@
 @import "./assets/fonts/index.css";
 @import "./assets/icons/fontello.css";
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     height: 20000px;
     font-family: "Roboto", sans-serif;
