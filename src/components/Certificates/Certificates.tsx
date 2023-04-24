@@ -28,6 +28,7 @@ const Certificates = () => {
                                         alt={company.altText}
                                         className="w-full object-cover"
                                         draggable="false"
+                                        title={company.altText}
                                     />
                                 </a>
                             </div>
