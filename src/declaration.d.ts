@@ -1,4 +1,5 @@
 declare module "*.png" {
+    // eslint-disable-next-line prettier/prettier
     export default "" as string;
 }
 
