@@ -11,3 +11,5 @@ export { default as SectionTitle } from "./SectionTitle/SectionTitle";
 export { default as Projects } from "./Projects/Projects";
 
 export { default as Certificates } from "./Certificates/Certificates";
+
+export { default as About } from "./About/About";

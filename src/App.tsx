@@ -1,4 +1,4 @@
-import { Navbar, Landing, Certificates, GoToTop } from "components";
+import { Navbar, Landing, Certificates, GoToTop, About } from "components";
 
 function App() {
     return (
@@ -7,6 +7,8 @@ function App() {
             <GoToTop />
 
             <Landing />
+
+            <About />
 
             <Certificates />
         </div>
