@@ -1,4 +1,13 @@
-import { Navbar, Landing, Certificates, GoToTop, About, Projects, UnderShadow } from "components";
+import {
+    Navbar,
+    Landing,
+    Certificates,
+    GoToTop,
+    About,
+    Projects,
+    UnderShadow,
+    Contact,
+} from "components";
 
 function App() {
     return (
@@ -14,6 +23,8 @@ function App() {
             <Projects />
 
             <Certificates />
+
+            <Contact />
         </div>
     );
 }

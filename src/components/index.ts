@@ -15,3 +15,5 @@ export { default as Certificates } from "./Certificates/Certificates";
 export { default as About } from "./About/About";
 
 export { default as UnderShadow } from "./UnderShadow/UnderShadow";
+
+export { default as Contact } from "./Contact/Contact";
