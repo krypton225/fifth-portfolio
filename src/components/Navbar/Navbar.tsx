@@ -56,7 +56,7 @@ const Navbar = () => {
                         <li key={id} className="w-full block mx-auto md:mb-1 lg:mb-0 lg:inline-block">
                             {/* href={`#${url}`} */}
                             {/* prettier-ignore */}
-                            <Link to={`${url}`} smooth={true} offset={-100} duration={900} delay={200}
+                            <Link to={`${url}`} smooth={true} offset={-70} duration={900} delay={200}
                                 onClick={closeTogglerAfterLinkClicked} activeClass="nav-link-active"
                                 className={`inline-block lg:mx-6 py-2 relative whitespace-nowrap capitalize text-md font-semibold
                                     sm:text-base lg:text-lg lg:font-normal overflow-hidden cursor-pointer
