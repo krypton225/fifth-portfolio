@@ -8,6 +8,7 @@ import {
     UnderShadow,
     Contact,
     Copyright,
+    SocialMedia,
 } from "components";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Navbar />
             <GoToTop />
             <UnderShadow />
+            <SocialMedia />
 
             <Landing />
 
