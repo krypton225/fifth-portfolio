@@ -78,3 +78,10 @@ section {
 .overlay-project {
     background-color: rgba(0, 0, 0, 0.753);
 }
+
+@supports not ((-webkit-backdrop-filter: blur(24px)) or (backdrop-filter: blur(24px))) {
+    .custom-backdrop-blur {
+        -webkit-backdrop-filter: blur(24px);
+        backdrop-filter: blur(24px);
+    }
+}
