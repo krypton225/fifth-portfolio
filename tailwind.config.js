@@ -16,6 +16,7 @@ module.exports = {
                 "dark-2": "#161313",
                 "dark-3": "#1F1F1F",
                 "gray-color": "#828383",
+                "inputs": "#e3e0e1",
                 "custom-white-1": "#FEFFFE",
                 "custom-white-2": "#F6F5F5",
             },
