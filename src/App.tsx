@@ -7,6 +7,7 @@ import {
     Projects,
     UnderShadow,
     Contact,
+    Copyright,
 } from "components";
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
             <Certificates />
 
             <Contact />
+
+            <Copyright />
         </div>
     );
 }
