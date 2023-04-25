@@ -35,7 +35,7 @@ const Navbar = () => {
     return (
         <nav
             className={`min-h-[2.1rem] w-full fixed top-0 left-0 z-[999999999] transition-all duration-500 backdrop-blur-xl
-            ${isScroll ? "py-0 shadow-md" : "py-3"}`}>
+            ${isScroll ? "py-[0.15rem] shadow-md" : "py-3"}`}>
             <div className="container flex justify-between items-center">
                 <h1 className="py-3 text-xl sm:text-2xl md:text-3xl tracking-wider relative">
                     <a href="#">
