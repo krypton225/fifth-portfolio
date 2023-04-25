@@ -8,7 +8,7 @@
     }
 
     .btn {
-        @apply inline-block px-9 py-2 relative z-10 border-[0.1rem] border-solid border-primary font-semibold capitalize tracking-wide overflow-hidden transition-all duration-[0.53s]
+        @apply inline-block px-9 py-2 relative z-10 border-[0.01rem] border-solid border-primary font-semibold capitalize tracking-wide overflow-hidden transition-all duration-[0.53s]
     }
 
     .btn-has-bg {
