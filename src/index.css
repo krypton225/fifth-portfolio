@@ -70,3 +70,7 @@ section {
 .shadow-top {
     box-shadow: 0 -15px 150px 25px #2554c7;
 }
+
+.overlay-project {
+    background-color: rgba(0, 0, 0, 0.753);
+}
