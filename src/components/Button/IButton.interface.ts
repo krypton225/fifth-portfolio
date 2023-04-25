@@ -3,6 +3,8 @@ interface IButton {
     url?: string;
     hasBg: boolean;
     hasBgOnHover?: boolean;
+    isFullWidth?: boolean;
+    center?: boolean;
 }
 
 export default IButton;
