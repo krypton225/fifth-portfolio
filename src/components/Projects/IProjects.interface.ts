@@ -1,6 +1,5 @@
-import ISetID from "utils/interfaces/ISetID.interface";
-
-interface IProjects extends ISetID {
+import { ISetID, IDelayAnimation } from "utils/interfaces/index";
+interface IProjects extends ISetID, IDelayAnimation {
     name: string;
     image: string;
     description?: string;
@@ -8,7 +7,6 @@ interface IProjects extends ISetID {
         src: string,
         altText: string,
     };
-    delayAnimation?: string | number;
 }
 
 export default IProjects;
