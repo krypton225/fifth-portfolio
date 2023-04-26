@@ -1,4 +1,5 @@
 import GenerateId from "utils/generate-id";
+import Delay from "utils/generate-delay";
 
 import ICertificate from "./ICertificate.interface";
 
@@ -14,7 +15,6 @@ const CertificatesData: Array<ICertificate> = [
         },
         date: "10/12/2022",
         url: "https://www.coursera.org/account/accomplishments/specialization/certificate/9Q34BYADEV53",
-        delayAnimation: 50,
     },
     {
         name: "Build Wireframes and Low-Fidelity Prototypes",
@@ -25,7 +25,6 @@ const CertificatesData: Array<ICertificate> = [
         },
         date: "03/12/2022",
         url: "https://www.coursera.org/account/accomplishments/certificate/R7GARWU2FQQ9",
-        delayAnimation: 150,
     },
     {
         name: "Design a User Experience for Social Good & Prepare for Jobs",
@@ -36,7 +35,6 @@ const CertificatesData: Array<ICertificate> = [
         },
         date: "10/12/2022",
         url: "https://www.coursera.org/account/accomplishments/certificate/FCFHQF8MAAYU",
-        delayAnimation: 250,
     },
     {
         name: "Conduct UX Research and Test Early Concepts",
@@ -47,7 +45,6 @@ const CertificatesData: Array<ICertificate> = [
         },
         date: "05/12/2022",
         url: "https://www.coursera.org/account/accomplishments/certificate/FVR7ASX6BRSQ",
-        delayAnimation: 350,
     },
     {
         name: "Create High-Fidelity Designs and Prototypes in Figma",
@@ -58,7 +55,6 @@ const CertificatesData: Array<ICertificate> = [
         },
         date: "06/12/2022",
         url: "https://www.coursera.org/account/accomplishments/certificate/M4K3HXBFQWXQ",
-        delayAnimation: 450,
     },
     {
         name: "Foundations of User Experience (UX) Design",
@@ -69,7 +65,6 @@ const CertificatesData: Array<ICertificate> = [
         },
         date: "01/11/2022",
         url: "https://www.coursera.org/account/accomplishments/certificate/MGDTW86E9C5Z",
-        delayAnimation: 550,
     },
     {
         name: "Responsive Web Design in Adobe XD",
@@ -80,7 +75,6 @@ const CertificatesData: Array<ICertificate> = [
         },
         date: "08/12/2022",
         url: "https://www.coursera.org/account/accomplishments/certificate/XKEWGPEPNGEC",
-        delayAnimation: 650,
     },
     {
         name: "Start the UX Design Process: Empathize, Define, and Ideate",
@@ -91,7 +85,6 @@ const CertificatesData: Array<ICertificate> = [
         },
         date: "01/11/2022",
         url: "https://www.coursera.org/account/accomplishments/certificate/VGM62JXLUUDV",
-        delayAnimation: 750,
     },
     {
         name: "UX Design Fundamentals",
@@ -102,7 +95,6 @@ const CertificatesData: Array<ICertificate> = [
         },
         date: "19/01/2022",
         url: "https://drive.google.com/file/d/17O_-Zgm3qGjrZYWEcT5d-qA_pIfXG8z5/view",
-        delayAnimation: 850,
     },
     {
         name: "UX/UX - ITI training",
@@ -113,7 +105,6 @@ const CertificatesData: Array<ICertificate> = [
         },
         date: "15/07/2019",
         url: "https://drive.google.com/file/d/1ucxPD-mtUcL6XvevaokxH8ufNlhkEFX0/view",
-        delayAnimation: 950,
     },
     {
         name: "IPIC training",
@@ -124,10 +115,12 @@ const CertificatesData: Array<ICertificate> = [
         },
         date: "20/08/2020",
         url: "https://drive.google.com/file/d/1G9HSG0GIg3s1NvDH8h56__bhZXVa7Ej6/view",
-        delayAnimation: 1050,
     },
 ];
 
-(() => GenerateId(CertificatesData))();
+(() => {
+    GenerateId(CertificatesData);
+    Delay.generate(CertificatesData, 100);
+})();
 
 export default CertificatesData;
