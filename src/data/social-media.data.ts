@@ -1,4 +1,4 @@
-import GenerateId from "utils/generate-id";
+import { GenerateID } from "utils";
 
 import ISocialMedia from "components/SocialMedia/ISocialMedia.interface";
 
@@ -33,6 +33,6 @@ const SocialMediaData: Array<ISocialMedia> = [
     },
 ];
 
-(() => GenerateId(SocialMediaData))();
+(() => GenerateID(SocialMediaData))();
 
 export default SocialMediaData;
