@@ -6,7 +6,7 @@ import AOS from "aos";
 
 import SectionTitle from "components/SectionTitle/SectionTitle";
 
-import CertificatesData from "./certificates.data";
+import CertificatesData from "data/certificates.data";
 
 const Certificates = () => {
     useEffect(() => {

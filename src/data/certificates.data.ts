@@ -1,7 +1,7 @@
 import GenerateId from "utils/generate-id";
 import Delay from "utils/generate-delay";
 
-import ICertificate from "./ICertificate.interface";
+import ICertificate from "../components/Certificates/ICertificate.interface";
 
 import { CourseraLogo, IPICLogo, ITILogo } from "data/images";
 
