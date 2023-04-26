@@ -1,4 +1,4 @@
-import ISetID from "utils/interfaces/ISetID.interface";
+import { ISetID } from "utils/interfaces/index";
 
 interface ISocialMedia extends ISetID {
     icon: string;
