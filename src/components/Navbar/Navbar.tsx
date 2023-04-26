@@ -38,10 +38,18 @@ const Navbar = () => {
             backdrop-blur-xl custom-backdrop-blur 
             ${isScroll ? "py-[0.15rem] shadow-md" : "py-3"}`}>
             <div className="container flex justify-between items-center">
-                <h1 className="py-3 text-xl sm:text-2xl md:text-3xl tracking-wider relative">
-                    <a href="#">
+                <h1 className="py-3 text-xl sm:text-2xl md:text-3xl tracking-wider relative cursor-pointer">
+                    <Link
+                        to="home"
+                        smooth={true}
+                        offset={-70}
+                        duration={900}
+                        delay={200}
+                        rel="noreferrer"
+                        aria-label={`Khaled Hegazi`}
+                        className="py-3">
                         <span className="text-primary font-[Courgette]">K</span>haled
-                    </a>
+                    </Link>
                 </h1>
                 {/* prettier-ignore */}
                 <ul
