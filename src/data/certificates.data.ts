@@ -1,5 +1,4 @@
-import GenerateId from "utils/generate-id";
-import Delay from "utils/generate-delay";
+import { GenerateID, Delay } from "utils";
 
 import ICertificate from "../components/Certificates/ICertificate.interface";
 
@@ -119,7 +118,7 @@ const CertificatesData: Array<ICertificate> = [
 ];
 
 (() => {
-    GenerateId(CertificatesData);
+    GenerateID(CertificatesData);
     Delay.generate(CertificatesData, 100);
 })();
 
