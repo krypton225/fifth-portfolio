@@ -33,10 +33,10 @@ const About = () => {
 
                     I obtained a Bachelor&apos;s degree in Computer Science from the&nbsp;
                     <a href="https://www.mans.edu.eg/en/faculty-of-computing-and-information-en"
-                        className="text-primary underline" target="_blank" rel="noreferrer">
+                        className="text-primary underline" target="_blank" rel="noreferrer" aria-label="Faculty Of Computing And Information">
                         Faculty of Computers and Information
                     </a>&nbsp;at <a href="https://www.mans.edu.eg/" className="text-primary underline"
-                        target="_blank" rel="noreferrer">
+                        target="_blank" rel="noreferrer" aria-label="Mansoura University">
                         Mansoura University
                     </a> in 2020.
 
