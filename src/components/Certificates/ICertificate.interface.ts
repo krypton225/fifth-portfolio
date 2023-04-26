@@ -1,6 +1,6 @@
-import ISetID from "utils/interfaces/ISetID.interface";
+import { ISetID, IDelayAnimation } from "utils/interfaces/index";
 
-interface ICertificate extends ISetID {
+interface ICertificate extends ISetID, IDelayAnimation {
     name: string;
     company: {
         logo: string,
