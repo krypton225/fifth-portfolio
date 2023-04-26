@@ -59,7 +59,7 @@ const Navbar = () => {
                             {/* prettier-ignore */}
                             <Link to={`${url}`} smooth={true} offset={-70} duration={900} delay={200}
                                 onClick={closeTogglerAfterLinkClicked} activeClass="nav-link-active"
-                                className={`inline-block lg:mx-6 py-2 relative whitespace-nowrap capitalize text-md font-semibold
+                                className={`inline-block lg:ml-10 py-2 relative whitespace-nowrap capitalize text-md font-semibold
                                     sm:text-base lg:text-lg lg:font-normal overflow-hidden cursor-pointer
                                     transition-all duration-500 hover:text-primary 
 
