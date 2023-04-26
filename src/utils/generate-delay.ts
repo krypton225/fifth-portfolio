@@ -1,14 +1,16 @@
 const Delay = (function () {
     function* getNumberID(start?: number): Generator<number> {
         if (start) {
-            if (start < 0 || start > 3000) {
-                throw new Error("start number must");
+            if (start < 0 && start > 3000) {
+                throw new Error("start must be number type.");
             }
 
-            let increase: number = start || 50;
+            let increase: number = start;
+
+            // * Yield the value of start in the first. After that yield the increase values.
+            yield start;
 
             while (true) {
-                yield increase;
                 yield (increase += 100);
             }
         }
