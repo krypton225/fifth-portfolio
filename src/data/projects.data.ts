@@ -1,4 +1,4 @@
-import GenerateId from "utils/generate-id";
+import { GenerateID } from "utils";
 
 import IProjects from "components/Projects/IProjects.interface";
 
@@ -160,7 +160,7 @@ const ProjectsData: Array<IProjects> = [
 ];
 
 (() => {
-    GenerateId(ProjectsData);
+    GenerateID(ProjectsData);
     Delay.generate(ProjectsData, 150);
 })();
 
