@@ -25,7 +25,8 @@ const Projects = () => {
         <section className="w-full" id="projects">
             <SectionTitle text="projects" />
             <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-10">
-                {ProjectsData.slice(0, numberOfShowedProjects)
+                {
+                    ProjectsData.slice(0, numberOfShowedProjects)
                         .map(({ id, name, image, url, delayAnimation }) => (
                             <div
                                 key={id}
@@ -50,7 +51,8 @@ const Projects = () => {
                                     <Button text="view" hasBg hasBgOnHover url={url.src} />
                                 </div>
                             </div>
-                        ))}
+                        ))
+                }
             </div>
 
             <div className="w-full mt-14 flex justify-center items-center">
