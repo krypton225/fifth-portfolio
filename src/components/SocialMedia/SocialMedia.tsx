@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 import { useState } from "react";
 
 import SocialMediaData from "data/social-media.data";
@@ -22,17 +24,16 @@ const SocialMedia = () => {
             ${isReachToPoint ? "bottom-[4%]" : "-bottom-[15%]"} 
             rounded-full fixed left-[35%] md:left-1/2 z-[999999999] -translate-x-[45%] md:-translate-x-1/2 
             flex justify-between items-center bg-primary transition-all duration-[1s]`}>
-            {SocialMediaData.map(({ id, icon, url: { src, altText } }) => (
-                <div
-                    key={id}
-                    className={`w-7 lg:w-8 h-7 lg:h-8 relative rounded-full mx-2 lg:mx-4 
+            {
+                SocialMediaData.map(({ id, icon, url: { src, altText } }) => (
+                    <div key={id} className={`w-7 lg:w-8 h-7 lg:h-8 relative rounded-full mx-2 lg:mx-4 
                     flex justify-center items-center text-primary bg-white`}>
-                    <a
-                        href={src}
-                        data-current-title={altText}
-                        target="_blank"
-                        rel="noreferrer"
-                        className={`w-full h-full relative flex justify-center items-center
+                        <a
+                            href={src}
+                            data-current-title={altText}
+                            target="_blank"
+                            rel="noreferrer"
+                            className={`w-full h-full relative flex justify-center items-center
                         
                         md:before:content-[attr(data-current-title)] md:before:w-fit md:before:py-2 md:before:px-3 
                         md:before:rounded-md md:before:absolute md:before:top-[-170%] md:before:-left-[50%] 
@@ -40,10 +41,11 @@ const SocialMedia = () => {
                         md:before:invisible md:before:opacity-0 before:transition-all before:duration-300
                         
                         hover:before:visible hover:before:opacity-100 hover:before:top-[-190%]`}>
-                        <i className={`icon ${icon}`}></i>
-                    </a>
-                </div>
-            ))}
+                            <i className={`icon ${icon}`}></i>
+                        </a>
+                    </div>
+                ))
+            }
         </div>
     );
 };
