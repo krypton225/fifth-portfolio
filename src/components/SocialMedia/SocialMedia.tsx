@@ -33,6 +33,7 @@ const SocialMedia = () => {
                             data-current-title={altText}
                             target="_blank"
                             rel="noreferrer"
+                            aria-label={altText}
                             className={`w-full h-full relative flex justify-center items-center
                         
                         md:before:content-[attr(data-current-title)] md:before:w-fit md:before:py-2 md:before:px-3 
