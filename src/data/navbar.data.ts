@@ -1,4 +1,4 @@
-import GenerateId from "utils/generate-id";
+import { GenerateID } from "utils";
 
 import INavbar from "components/Navbar/Navbar.interface";
 
@@ -10,6 +10,6 @@ const NavbarData: Array<INavbar> = [
     { url: "contact-me", textLink: "hire me", isButton: true },
 ];
 
-(() => GenerateId(NavbarData))();
+(() => GenerateID(NavbarData))();
 
 export default NavbarData;
