@@ -1,7 +1,18 @@
-import { PersonalPicture } from "data/images";
+import { useEffect } from "react";
+import AOS from "aos";
 import { Link } from "react-scroll";
 
+import { PersonalPicture } from "data/images";
+
 const Landing = () => {
+    useEffect(() => {
+        AOS.init({
+            once: true,
+        });
+
+        AOS.refresh();
+    }, []);
+
     return (
         <header className="w-screen landing" id="home">
             <div className="container w-full grid place-items-start md:place-items-center">
@@ -26,7 +37,12 @@ const Landing = () => {
                                 offset={-70}
                                 duration={900}
                                 delay={200}
-                                className="btn btn-has-bg">
+                                className="btn btn-has-bg"
+                                data-aos="fade-right"
+                                data-aos-offset="50"
+                                data-aos-easing="ease-in-out"
+                                data-aos-duration="700"
+                                data-aos-delay="500">
                                 hire me
                             </Link>
 
@@ -36,14 +52,24 @@ const Landing = () => {
                                 smooth={true}
                                 offset={-70}
                                 duration={900}
-                                delay={200}>
+                                delay={200}
+                                data-aos="fade-right"
+                                data-aos-offset="50"
+                                data-aos-easing="ease-in-out"
+                                data-aos-duration="700"
+                                data-aos-delay="200">
                                 projects
                             </Link>
                         </div>
                     </div>
 
                     <div
-                        className={`w-[14rem] sm:w-[16rem] lg:w-[22rem] h-[14rem] sm:h-[16rem] lg:h-[22rem]`}>
+                        className={`w-[14rem] sm:w-[16rem] lg:w-[22rem] h-[14rem] sm:h-[16rem] lg:h-[22rem]`}
+                        data-aos="fade-left"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">
                         <img
                             src={PersonalPicture}
                             alt="Personal Picture Landing Page"
