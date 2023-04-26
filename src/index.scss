@@ -39,16 +39,12 @@ body {
 
 header {
     padding-bottom: min(5vh, 4rem);
-}
 
-@media (min-height: 100px) {
-    header {
+    @media (min-height: 100px) {
         padding-top: min(30vh, 7rem);
     }
-}
 
-@media (min-height: 319px) {
-    header {
+    @media (min-height: 319px) {
         padding-top: min(24.5vh, 7rem);
     }
 }
@@ -57,10 +53,8 @@ section {
     padding-top: min(7.5vh, 5rem);
     padding-bottom: min(4vh, 2.5rem);
     scroll-padding-top: 0;
-}
 
-@media (min-height: 1280px) {
-    section {
+    @media (min-height: 1280px) {
         padding-top: min(4.5vh, 5rem);
     }
 }
