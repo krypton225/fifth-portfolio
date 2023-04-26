@@ -1,9 +1,16 @@
 const Delay = (function () {
     function* getNumberID(start?: number): Generator<number> {
-        let increase: number = start || 50;
+        if (start) {
+            if (start < 0 || start > 3000) {
+                throw new Error("start number must");
+            }
 
-        while (true) {
-            yield (increase += 100);
+            let increase: number = start || 50;
+
+            while (true) {
+                yield increase;
+                yield (increase += 100);
+            }
         }
     }
 
@@ -18,9 +25,9 @@ const Delay = (function () {
      * @param  {Array} dataArr=[] - array has objects and insert delayAnimation into each one.
      */
     // prettier-ignore
-    function generateNumber(dataArr: Array<object> = []): void {
+    function generateNumber(dataArr: Array<object> = [], startFrom: number): void {
         if (isArrayNotEmpty(dataArr)) {
-            const counter: Generator<number> = getNumberID();
+            const counter: Generator<number> = getNumberID(startFrom);
 
             dataArr.forEach((row) :void => {
                 if (typeof row === "object") {
