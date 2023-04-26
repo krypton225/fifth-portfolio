@@ -1,6 +1,6 @@
 import { GenerateID } from "utils";
 
-import INavbar from "components/Navbar/Navbar.interface";
+import INavbar from "components/Navbar/INavbar.interface";
 
 const NavbarData: Array<INavbar> = [
     { url: "home", textLink: "home", isButton: false },
