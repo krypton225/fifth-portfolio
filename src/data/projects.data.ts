@@ -19,6 +19,7 @@ import {
     Project14,
     Project15,
 } from "data/images";
+import Delay from "utils/generate-delay";
 
 const ProjectsData: Array<IProjects> = [
     {
@@ -29,7 +30,6 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/161081025/E-Learning-Application-Case-Study`,
             altText: `e-learning application`,
         },
-        delayAnimation: 50,
     },
     {
         name: `laboratory application`,
@@ -39,7 +39,6 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/161344163/Laboratory-Application-Case-Study`,
             altText: `laboratory application`,
         },
-        delayAnimation: 150,
     },
     {
         name: `pharmacy application`,
@@ -49,7 +48,6 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/136199935/Pharmacy-app-%28Case-Study%29`,
             altText: `pharmacy application`,
         },
-        delayAnimation: 250,
     },
     {
         name: `palm labs`,
@@ -59,7 +57,6 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/165255001/Checkout-Website`,
             altText: `palm labs`,
         },
-        delayAnimation: 350,
     },
     {
         name: `fatmote`,
@@ -69,7 +66,6 @@ const ProjectsData: Array<IProjects> = [
             src: "https://www.behance.net/gallery/132975207/Food-App",
             altText: `fatmote`,
         },
-        delayAnimation: 450,
     },
     {
         name: `foody application`,
@@ -79,7 +75,6 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/159222137/Foody-app`,
             altText: `foody application`,
         },
-        delayAnimation: 550,
     },
     {
         name: `UI design challenge 1`,
@@ -89,7 +84,6 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/161561283/UI-Challenge-Part-01`,
             altText: `UI Challenge Part 1`,
         },
-        delayAnimation: 650,
     },
     {
         name: `UI design challenge 2`,
@@ -99,7 +93,6 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/162453919/UI-Challenge-Part-2`,
             altText: `UI Challenge Part 2`,
         },
-        delayAnimation: 750,
     },
     {
         name: `hotel website`,
@@ -109,7 +102,6 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/159361625/Hotel-Website`,
             altText: `hotel website`,
         },
-        delayAnimation: 850,
     },
     {
         name: `e-commerce application`,
@@ -119,7 +111,6 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/138246605/E-commerce-app`,
             altText: `e-commerce application`,
         },
-        delayAnimation: 950,
     },
     {
         name: `food website`,
@@ -129,7 +120,6 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/137046869/Food-%28Website%29`,
             altText: `food website`,
         },
-        delayAnimation: 1050,
     },
     {
         name: `stems application`,
@@ -139,7 +129,6 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/134855731/Stems-app`,
             altText: `stems application`,
         },
-        delayAnimation: 1150,
     },
     {
         name: `seasonal fruits`,
@@ -149,7 +138,6 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/134674153/Seasonal-Fruits`,
             altText: `seasonal fruits`,
         },
-        delayAnimation: 1250,
     },
     {
         name: `food expert`,
@@ -159,7 +147,6 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/134050817/Food-app`,
             altText: `food expert`,
         },
-        delayAnimation: 1350,
     },
     {
         name: `furniture application`,
@@ -169,10 +156,12 @@ const ProjectsData: Array<IProjects> = [
             src: `https://www.behance.net/gallery/133027405/Furniture-App`,
             altText: `furniture application`,
         },
-        delayAnimation: 1450,
     },
 ];
 
-(() => GenerateId(ProjectsData))();
+(() => {
+    GenerateId(ProjectsData);
+    Delay.generate(ProjectsData);
+})();
 
 export default ProjectsData;
