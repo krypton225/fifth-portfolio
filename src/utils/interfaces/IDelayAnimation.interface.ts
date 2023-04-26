@@ -1,5 +1,5 @@
 interface IDelayAnimation {
-    delayAnimation: string | number;
+    delayAnimation?: string | number;
 }
 
 export default IDelayAnimation;
