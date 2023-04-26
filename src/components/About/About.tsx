@@ -31,9 +31,6 @@ const About = () => {
                     <br />
                     I&apos;m always seeking out new ways to expand my knowledge and stay up-to-date with the latest trends and technologies in&nbsp;
                     <span className="text-primary">UI/UX Design</span> field.
-
-                    <br />
-                    <br />
                 </p>
             </div>
         </section>
