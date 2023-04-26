@@ -1,4 +1,4 @@
-import { ISetID, IDelayAnimation } from "utils/interfaces/index";
+import { ISetID, IDelayAnimation } from "utils";
 
 interface ICertificate extends ISetID, IDelayAnimation {
     name: string;
