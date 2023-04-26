@@ -41,7 +41,7 @@ const Certificates = () => {
                                 </p>
 
                                 <div className="w-24 mt-4 mb-2 relative">
-                                    <a href={company.link} target="_blank" rel="noreferrer">
+                                    <a href={company.link} target="_blank" rel="noreferrer" aria-label={company.altText}>
                                         <img
                                             src={company.logo}
                                             alt={company.altText}
