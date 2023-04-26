@@ -1,4 +1,4 @@
-import { ISetID, IDelayAnimation } from "utils/interfaces/index";
+import { ISetID, IDelayAnimation } from "utils";
 interface IProjects extends ISetID, IDelayAnimation {
     name: string;
     image: string;
