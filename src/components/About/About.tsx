@@ -1,13 +1,31 @@
+import { useEffect } from "react";
+import AOS from "aos";
+
 import SectionTitle from "components/SectionTitle/SectionTitle";
 
 const About = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            once: true,
+        });
+
+        AOS.refresh();
+    }, []);
+
     return (
         <section className="about" id="about">
             <SectionTitle text="about me" />
 
             {/* prettier-ignore */}
-            <div className="container mt-10">
-                <p className="text-lg leading-8 text-start md:text-center font-semibold">
+            <div
+                className="container mt-10"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out">
+                <p className="w-full md:max-w-7xl mx-auto text-lg xl:text-xl leading-8 text-start md:text-center font-semibold">
                     Hi! I&apos;m <span className="text-primary">Khaled Hegazi</span>, a 25 year old.
                     I work as <span className="text-primary">UI/UX designer</span> in Egypt.
 
