@@ -8,6 +8,7 @@ interface IProjects extends ISetID {
         src: string,
         altText: string,
     };
+    delayAnimation?: string | number;
 }
 
 export default IProjects;
