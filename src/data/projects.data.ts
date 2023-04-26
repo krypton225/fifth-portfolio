@@ -161,7 +161,7 @@ const ProjectsData: Array<IProjects> = [
 
 (() => {
     GenerateId(ProjectsData);
-    Delay.generate(ProjectsData);
+    Delay.generate(ProjectsData, 150);
 })();
 
 export default ProjectsData;
