@@ -1,4 +1,4 @@
-import ISetID from "utils/interfaces/ISetID.interface";
+import { ISetID } from "utils/interfaces/index";
 
 interface INavbar extends ISetID {
     id?: number;
