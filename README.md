@@ -4,14 +4,14 @@
 
 ## Technologies Used
 
-- React JS Library using TypeScript.
-- Tailwind CSS Framework.
-- SCSS Preprocessor.
-- React Scroll Package.
-- AOS (Animation On Scroll) Library.
-- EsLint.
-- Prettier.
-- Vercel.
+- [React JS](https://react.dev/) with [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS Framework](https://tailwindcss.com/)
+- [SCSS Preprocessor](https://sass-lang.com/)
+- [React Scroll Package](https://www.npmjs.com/package/react-scroll) with [Types](https://www.npmjs.com/package/@types/react-scroll)
+- [AOS (Animation On Scroll) Library](https://michalsnik.github.io/aos/)
+- [EsLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Vercel](https://vercel.com/)
 
 ## How To Use After Clone
 
