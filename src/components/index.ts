@@ -21,3 +21,5 @@ export { default as Contact } from "./Contact/Contact";
 export { default as Copyright } from "./Copyright/Copyright";
 
 export { default as SocialMedia } from "./SocialMedia/SocialMedia";
+
+export { default as DarkModeToggler } from "./DarkModeToggler/DarkModeToggler";
