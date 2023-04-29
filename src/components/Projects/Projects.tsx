@@ -4,13 +4,15 @@ import { useState, useEffect } from "react";
 
 import AOS from "aos";
 
+import { DarkMode } from "utils";
+
 import Button from "components/Button/Button";
 
 import SectionTitle from "components/SectionTitle/SectionTitle";
 
 import ProjectsData from "data/projects.data";
 
-const Projects = () => {
+const Projects = ({ isDark }: DarkMode) => {
     const [numberOfShowedProjects] = useState(6);
 
     useEffect(() => {
@@ -22,7 +24,7 @@ const Projects = () => {
     }, []);
 
     return (
-        <section className="w-full" id="projects">
+        <section className={`w-full ${isDark ? "dark" : ""}`} id="projects">
             <SectionTitle text="projects" />
             <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-14 gap-y-10">
                 {
