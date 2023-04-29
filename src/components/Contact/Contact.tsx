@@ -25,6 +25,8 @@ const Contact = ({ isDark }: DarkMode) => {
                         name="name"
                         id="name"
                         placeholder="name"
+                        autoComplete="off"
+                        role="presentation"
                         className={`input-contact ${isDark ? "bg-slate-700" : ""} text-md`}
                     />
 
@@ -33,6 +35,8 @@ const Contact = ({ isDark }: DarkMode) => {
                         name="email"
                         id="email"
                         placeholder="email"
+                        autoComplete="off"
+                        role="presentation"
                         className={`input-contact ${isDark ? "bg-slate-700" : ""} text-md`}
                     />
 
