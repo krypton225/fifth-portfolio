@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 import AOS from "aos";
 
+import { DarkMode } from "utils";
+
 import SectionTitle from "components/SectionTitle/SectionTitle";
 
-const About = () => {
+const About = ({ isDark }: DarkMode) => {
     useEffect(() => {
         AOS.init({
             duration: 2000,
@@ -14,7 +16,10 @@ const About = () => {
     }, []);
 
     return (
-        <section className="about" id="about">
+        <section
+            className={`about transition-all duration-500 
+            ${isDark ? "dark" : ""}`}
+            id="about">
             <SectionTitle text="about me" />
 
             {/* prettier-ignore */}
