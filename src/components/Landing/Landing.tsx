@@ -2,9 +2,11 @@ import { useEffect } from "react";
 import AOS from "aos";
 import { Link } from "react-scroll";
 
+import { DarkMode } from "utils";
+
 import { PersonalPicture } from "data/images";
 
-const Landing = () => {
+const Landing = ({ isDark }: DarkMode) => {
     useEffect(() => {
         AOS.init({
             once: true,
@@ -14,7 +16,10 @@ const Landing = () => {
     }, []);
 
     return (
-        <header className="w-screen landing" id="home">
+        <header
+            id="home"
+            className={`w-screen landing transition-all duration-500 
+            ${isDark ? "dark" : ""}`}>
             <div className="container w-full grid place-items-start md:place-items-center">
                 <div className="w-full flex justify-center lg:justify-between items-center flex-wrap gap-5 sm:gap-10">
                     <div className="text-center sm:text-start chn-text-mq">
