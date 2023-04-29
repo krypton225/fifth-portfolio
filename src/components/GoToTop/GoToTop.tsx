@@ -2,7 +2,9 @@ import { useState } from "react";
 
 import { Link } from "react-scroll";
 
-const GoToTop = () => {
+import { DarkMode } from "utils";
+
+const GoToTop = ({ isDark }: DarkMode) => {
     const [isReachToPoint, setIsReachToPoint] = useState<boolean>(false);
 
     const handleScrolling = (): void => {
@@ -27,7 +29,8 @@ const GoToTop = () => {
                 title="Go to top of the page"
                 className={`w-[2.8rem] h-[2.8rem] rounded-md flex justify-center items-center 
                           bg-primary fixed bottom-[4%] ${isReachToPoint ? "right-[5%] visible opacity-100 rotate-0" :
-                        "-right-[2%] invisible opacity-0 rotate-[15deg]"} shadow-md shadow-slate-600 
+                            "-right-[2%] invisible opacity-0 rotate-[15deg]"} shadow-md
+                            ${isDark ? "shadow-slate-700" : "shadow-slate-600"} 
                             z-[999999] cursor-pointer transition-all duration-[1s] hover:-translate-y-1`}>
                 <svg
                     width="1rem"
