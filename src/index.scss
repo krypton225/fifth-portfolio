@@ -12,7 +12,7 @@
     }
 
     .btn-has-bg {
-        @apply before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:bg-primary text-white before:-z-[5] before:transition-all before:duration-[0.53s] hover:before:left-[-100%] hover:text-primary;
+        @apply before:content-[''] before:w-full before:h-full before:absolute before:top-0 before:left-0 before:bg-primary text-white before:-z-[5] before:transition-all before:duration-[0.53s] hover:before:left-[-100%] hover:text-primary dark:hover:text-white;
     }
 
     .btn-no-bg {
@@ -20,7 +20,15 @@
     }
 
     .input-contact {
-        @apply w-full py-3 px-5 outline-none border-none rounded-md bg-inputs md:text-lg placeholder:capitalize;
+        @apply w-full py-3 px-5 outline-none border-none rounded-md bg-inputs md:text-lg placeholder:capitalize dark:text-white;
+    }
+
+    .dark{
+        @apply bg-black text-slate-300 transition-all duration-500;
+    }
+
+    .certificate-styles {
+        @apply border-zinc-200 text-primary shadow-gray-300 dark:text-white dark:shadow-gray-700 dark:border-zinc-600;
     }
 }
 
