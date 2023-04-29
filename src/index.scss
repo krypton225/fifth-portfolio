@@ -28,7 +28,7 @@
     }
 
     .certificate-styles {
-        @apply border-zinc-200 text-primary shadow-gray-300 dark:text-white dark:shadow-gray-700 dark:border-zinc-600;
+        @apply border-zinc-200 text-primary shadow-gray-300 dark:text-white dark:border-l-primary dark:shadow-gray-700 dark:border-zinc-600;
     }
 }
 
