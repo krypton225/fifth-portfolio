@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import {
     Navbar,
     Landing,
@@ -9,25 +11,37 @@ import {
     Contact,
     Copyright,
     SocialMedia,
+    DarkModeToggler,
 } from "components";
 
 function App() {
+    const [isDarkMode, setIsDarkMode] = useState(true);
+
+    const handleToggleDarkMode = (): void => setIsDarkMode((prev) => !prev);
+
     return (
-        <div className="hegazi-app selection:text-white selection:bg-primary">
-            <Navbar />
-            <GoToTop />
+        <div
+            className={`hegazi-app selection:text-white selection:bg-primary transition-all duration-500
+            ${isDarkMode ? "dark" : ""}`}>
+            <DarkModeToggler isDarkMode={isDarkMode} handleToggleDarkMode={handleToggleDarkMode} />
+
+            <Navbar isDark={isDarkMode} />
+
+            <GoToTop isDark={isDarkMode} />
+
             <UnderShadow />
+
             <SocialMedia />
 
-            <Landing />
+            <Landing isDark={isDarkMode} />
 
-            <About />
+            <About isDark={isDarkMode} />
 
-            <Projects />
+            <Projects isDark={isDarkMode} />
 
-            <Certificates />
+            <Certificates isDark={isDarkMode} />
 
-            <Contact />
+            <Contact isDark={isDarkMode} />
 
             <Copyright />
         </div>
