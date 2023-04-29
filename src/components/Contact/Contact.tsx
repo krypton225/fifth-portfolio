@@ -1,9 +1,11 @@
+import { DarkMode } from "utils";
+
 import Button from "components/Button/Button";
 import SectionTitle from "components/SectionTitle/SectionTitle";
 
-const Contact = () => {
+const Contact = ({ isDark }: DarkMode) => {
     return (
-        <section id="contact-me">
+        <section id="contact-me" className={`transition-all duration-500 ${isDark ? "dark" : ""}`}>
             <SectionTitle text="contact me" />
 
             <form className="container grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
@@ -11,8 +13,9 @@ const Contact = () => {
                     <textarea
                         name="msg"
                         id="msg"
-                        className={`w-full min-h-[12rem] p-5 outline-none border-none rounded-md
-                        caret-dark-2 text-dark-2 bg-inputs text-md md:text-lg placeholder:capitalize resize-none`}
+                        className={`w-full min-h-[12rem] p-5 outline-none border-none rounded-md 
+                        ${isDark ? "bg-slate-700 text-white caret-white" : "bg-inputs"} 
+                         text-md md:text-lg placeholder:capitalize resize-none`}
                         placeholder="message"></textarea>
                 </div>
 
@@ -22,7 +25,7 @@ const Contact = () => {
                         name="name"
                         id="name"
                         placeholder="name"
-                        className={`input-contact text-md`}
+                        className={`input-contact ${isDark ? "bg-slate-700" : ""} text-md`}
                     />
 
                     <input
@@ -30,7 +33,7 @@ const Contact = () => {
                         name="email"
                         id="email"
                         placeholder="email"
-                        className={`input-contact text-md`}
+                        className={`input-contact ${isDark ? "bg-slate-700" : ""} text-md`}
                     />
 
                     <div className="w-full text-center">
