@@ -4,12 +4,14 @@ import { useState, useEffect } from "react";
 
 import AOS from "aos";
 
+import { DarkMode } from "utils";
+
 import SectionTitle from "components/SectionTitle/SectionTitle";
 import Button from "components/Button/Button";
 
 import CertificatesData from "data/certificates.data";
 
-const Certificates = () => {
+const Certificates = ({ isDark }: DarkMode) => {
     const [numberOfShowedCertificates] = useState(3);
 
     useEffect(() => {
@@ -21,7 +23,7 @@ const Certificates = () => {
     }, []);
 
     return (
-        <section className="w-full" id="certificates">
+        <section className={`w-full ${isDark ? "dark" : ""} transition-all duration-500`} id="certificates">
             <SectionTitle text="certificates" />
 
             <div className="container">
@@ -32,9 +34,9 @@ const Certificates = () => {
                                 <div
                                     key={id}
                                     className={`w-full min-h-[14rem] py-6 relative 
-                                border-zinc-200 border-l-primary border-solid border-[2px] border-l-[6px] 
-                                rounded-md flex flex-col justify-between items-center
-                                text-primary text-center shadow-gray-300 shadow-lg`}
+                                    border-l-primary border-solid border-[2px] border-l-[6px] 
+                                    rounded-md flex flex-col justify-between items-center text-center shadow-lg 
+                                    certificate-styles`}
                                     data-aos="fade-up"
                                     data-aos-offset="100"
                                     data-aos-easing="ease-in-out"
