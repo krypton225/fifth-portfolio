@@ -3,6 +3,7 @@
 // eslint-disable-next-line no-undef
 module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
+    darkMode: 'class',
     theme: {
         container: {
             padding: "1.3rem",
