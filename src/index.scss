@@ -23,7 +23,7 @@
         @apply w-full py-3 px-5 outline-none border-none rounded-md bg-inputs md:text-lg placeholder:capitalize dark:text-white;
     }
 
-    .dark{
+    .dark {
         @apply bg-black text-slate-300 transition-all duration-500;
     }
 
@@ -34,6 +34,18 @@
 
 @import "./assets/fonts/index.scss";
 @import "./assets/icons/fontello.scss";
+
+:root {
+    --primary: #0801fe;
+    --primary-2: #2554c7;
+    --dark-1: #000101;
+    --dark-2: #161313;
+    --dark-3: #1f1f1f;
+    --gray-color: #828383;
+    --inputs: #e3e0e1;
+    --custom-white-1: #fefffe;
+    --custom-white-2: #f6f5f5;
+}
 
 ::-webkit-scrollbar {
     display: none;
