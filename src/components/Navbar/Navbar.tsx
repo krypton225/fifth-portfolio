@@ -82,7 +82,7 @@ const Navbar = ({ isDark }: DarkMode) => {
                                     after:absolute after:bottom-1 after:left-0 after:bg-primary
                                     after:transition-all after:duration-500 hover:after:w-full
 
-                                    ${isButton ? `px-9 capitalize tracking-wide btn-has-bg after:content-none` : ``}`}>
+                                    ${isButton ? `btn btn-has-bg px-9 capitalize tracking-wide btn-has-bg after:content-none` : ``}`}>
                                 {textLink}
                             </Link>
                         </li>
