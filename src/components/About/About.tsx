@@ -6,6 +6,12 @@ import { DarkMode } from "utils";
 import SectionTitle from "components/SectionTitle/SectionTitle";
 
 const About = ({ isDark }: DarkMode) => {
+    const YEAR_OF_BIRTH = 1998;
+    const CURRENT_YEAR = new Date().getFullYear();
+    const CURRENT_AGE = CURRENT_YEAR - YEAR_OF_BIRTH;
+
+    console.log(CURRENT_YEAR);
+
     useEffect(() => {
         AOS.init({
             duration: 2000,
@@ -31,7 +37,7 @@ const About = ({ isDark }: DarkMode) => {
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out">
                 <p className="w-full md:max-w-7xl mx-auto text-lg xl:text-xl leading-8 text-start md:text-center font-semibold">
-                    Hi! I&apos;m <span className="text-primary dark:text-blue-300">Khaled Hegazi</span>, a 25 year old.
+                    Hi! I&apos;m <span className="text-primary dark:text-blue-300">Khaled Hegazi</span>, a {CURRENT_AGE} year old.
                     I work as <span className="text-primary dark:text-blue-300">UI/UX designer</span> in Egypt.
 
                     <br />
