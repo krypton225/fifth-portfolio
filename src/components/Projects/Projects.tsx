@@ -50,7 +50,7 @@ const Projects = ({ isDark }: DarkMode) => {
                                     group-hover:visible group-hover:opacity-100`}>
                                     <p className="mb-7 capitalize text-white text-md">{name}</p>
 
-                                    <Button text="view" hasBg hasBgOnHover url={url.src} />
+                                    <Button text="view" hasBg hasBgOnHover url={url.src} target="_blank" />
                                 </div>
                             </div>
                         ))
