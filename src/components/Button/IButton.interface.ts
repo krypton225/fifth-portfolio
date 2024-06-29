@@ -5,6 +5,7 @@ interface IButton {
     hasBgOnHover?: boolean;
     isFullWidth?: boolean;
     center?: boolean;
+    target?: string;
 }
 
 export default IButton;
