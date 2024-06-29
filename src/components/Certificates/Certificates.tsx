@@ -62,8 +62,8 @@ const Certificates = ({ isDark }: DarkMode) => {
 
                                     <p className="w-full">
                                         <a
-                                            className={`w-[80%] rounded-md py-1 inline-block bg-primary text-white 
-                                        transition-colors duration-700 hover:bg-primary-2`}
+                                            className={`w-[80%] btn btn-has-bg inline-block bg-primary text-white 
+                                        transition-colors duration-700`}
                                             href={`${url}`}
                                             target="_blank"
                                             rel="noreferrer"
