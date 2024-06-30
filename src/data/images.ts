@@ -1,4 +1,4 @@
-export { default as PersonalPicture } from "assets/images/Personal-Pic.svg";
+export { default as PersonalPicture } from "assets/images/Personal-Pic.png";
 
 export { default as CourseraLogo } from "assets/images/coursera.svg";
 

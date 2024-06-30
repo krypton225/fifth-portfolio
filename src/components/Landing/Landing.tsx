@@ -69,12 +69,14 @@ const Landing = ({ isDark }: DarkMode) => {
                     </div>
 
                     <div
-                        className={`w-[14rem] sm:w-[16rem] lg:w-[22rem] h-[14rem] sm:h-[16rem] lg:h-[22rem]`}
+                        className={`w-[14rem] sm:w-[16rem] relative lg:w-[22rem] h-[14rem] sm:h-[16rem] lg:h-[22rem]`}
                         data-aos="fade-left"
                         data-aos-offset="200"
                         data-aos-delay="50"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in-out">
+                        <div
+                            className={`w-full h-full absolute inline-block bg-primary rounded-[50%] z-[-1]`}></div>
                         <img
                             src={PersonalPicture}
                             alt="Personal Picture Landing Page"
