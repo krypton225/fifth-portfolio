@@ -51,6 +51,10 @@
     display: none;
 }
 
+html {
+    scrollbar-width: none;
+}
+
 body {
     /* height: 20000px; */
     font-family: "Roboto", sans-serif;
