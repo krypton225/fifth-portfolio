@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+import parse from "html-react-parser";
+
 import SocialMediaData from "data/social-media.data";
 
 const SocialMedia = () => {
@@ -42,7 +44,7 @@ const SocialMedia = () => {
                         md:before:invisible md:before:opacity-0 before:transition-all before:duration-300
                         
                         hover:before:visible hover:before:opacity-100 hover:before:top-[-190%]`}>
-                            <i className={`icon ${icon}`}></i>
+                            {parse(icon)}
                         </a>
                     </div>
                 ))
