@@ -37,16 +37,16 @@ const About = ({ isDark }: DarkMode) => {
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out">
                 <p className="w-full md:max-w-7xl mx-auto text-lg xl:text-xl leading-8 text-start md:text-center font-semibold">
-                    Hi! I&apos;m <span className="text-primary dark:text-blue-300">Khaled Hegazi</span>, a {CURRENT_AGE} year old.
-                    I work as <span className="text-primary dark:text-blue-300">UI/UX designer</span> in Egypt.
+                    Hi! I&apos;m <span className="text-primary">Khaled Hegazi</span>, a {CURRENT_AGE} year old.
+                    I work as <span className="text-primary">UI/UX designer</span> in Egypt.
 
                     <br />
 
                     I obtained a Bachelor&apos;s degree in Computer Science from the&nbsp;
                     <a href="https://www.mans.edu.eg/en/faculty-of-computing-and-information-en"
-                        className="text-primary dark:text-blue-300 underline" target="_blank" rel="noreferrer" aria-label="Faculty Of Computing And Information">
+                        className="text-primary underline" target="_blank" rel="noreferrer" aria-label="Faculty Of Computing And Information">
                         Faculty of Computers and Information
-                    </a>&nbsp;at <a href="https://www.mans.edu.eg/" className="text-primary dark:text-blue-300 underline"
+                    </a>&nbsp;at <a href="https://www.mans.edu.eg/" className="text-primary underline"
                         target="_blank" rel="noreferrer" aria-label="Mansoura University">
                         Mansoura University
                     </a> in 2020.
@@ -59,7 +59,7 @@ const About = ({ isDark }: DarkMode) => {
                     <br />
                     <br />
                     I&apos;m always seeking out new ways to expand my knowledge and stay up-to-date with the latest trends and technologies in&nbsp;
-                    <span className="text-primary dark:text-blue-300">UI/UX Design</span> field.
+                    <span className="text-primary">UI/UX Design</span> field.
                 </p>
             </div>
         </section>
